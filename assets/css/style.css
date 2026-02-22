@@ -71,9 +71,6 @@ h1,h2,h3,h4,h5,h6{
     top: 170%;
     text-align: center;
 }
-#topnav .container .links ul li ul li{
-
-}
 #topnav .container .links ul li a{
     color: var(--text-color);
     padding: 0.9rem 1.2rem;
@@ -101,10 +98,9 @@ h1,h2,h3,h4,h5,h6{
 }
 /* top nav */
 /* header  nav */
-/* header{
+ header{
     background-color: var(--white-color);
     height: 20vh;
-    border: 1px solid red;
 }
 header .container{
     height: 20vh;
@@ -123,14 +119,47 @@ header .container .top .top-right{
     display: flex;
     gap: 2rem;
 }
-header .container .top .top-right span{
-}
+
 header .container .top .top-right span a{
     color: var(--black-color);
 }
 header .container .top .top-right span :hover{
     color: var(--primary-color);
 }
+header .container .down{
+    width: 100%;
+    height: 10vh;
 
-main */
+}
+header .container .down ul{
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    gap: 2.5rem;
+}
+header .container .down ul li a{
+    color: var(--black-color);
+    /* code pen  */
+    position: relative;
+    transition: transform 0.1s ease-in-out;
+}
+header .container .down ul li a::before,
+header .container .down ul li a::after{
+    content: "";
+    position: absolute;
+    background-color: var(--primary-color);
+    transition: transform 0.5s;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    bottom: -10px;
+    transform: scale(0);
+    transform-origin: left;
+}
+header .container .down ul li a:hover:after{
+    transform: scale(1);
+}
+
+
+/* main */
 /* footer */
