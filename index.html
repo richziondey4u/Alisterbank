@@ -80,7 +80,64 @@
     </header>
     <!-- main -->
     <main>
+        <!-- === banner section === -->
+        <section id="banner">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper" style="border: 1px solid rebeccapurple;">
+                    <div class="swiper-slide">
+                        <div class="bg-slide slide-1">
+                            <!-- <img src="/assets/imgs/slider1.jpg" alt=""> -->
+                            <div class="container">
+                                <div class="text-cont">
+                                 <h1>Gives back to your <br/>Community <span>.</span></h1>
+                                <p>Make it easy for you</p>
+                                <a href="" class="btn">Find our more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="bg-slide slide-2">
+                            <!-- <img src="/assets/imgs/slider1.jpg" alt=""> -->
+                            <div class="container">
+                                <div class="text-cont">
+                                 <h1>Take from the society <br/>and Community <span>.</span></h1>
+                                <p>Make it easy for you</p>
+                                <a href="" class="btn">Find our more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="bg-slide slide-3">
+                            <!-- <img src="/assets/imgs/slider1.jpg" alt=""> -->
+                            <div class="container">
+                                <div class="text-cont">
+                                 <h1>Gives back to your <br/>Community <span>.</span></h1>
+                                <p>Make it easy for you</p>
+                                <a href="" class="btn">Find our more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </section>
         
+        <!-- === partners section === -->
+         <section id="partner"></section>
+
+         <!-- === our services section === -->
+          <section id="services"></section>
+
+          <!-- === business banking section === -->
+           <section id="business"></section>
+         
+        <!-- === stay connected section === -->
+         <section id="connected"></section>
+
     </main>
     <!-- footer -->
     <footer></footer>
@@ -92,7 +149,12 @@
         // aos
       AOS.init();
     //   swiper 
-    var swiper = new Swiper(".mySwiper", {});
+    let swiper = new Swiper(".mySwiper", {
+        autoplay:{
+            delay:2000,
+            disbleonInteraction: false,
+        },
+    });
     </script>
 </body>
 </html>
