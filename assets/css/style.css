@@ -44,7 +44,8 @@ h1,h2,h3,h4,h5,h6{
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+}  
+    /* ===== top nav ====== */
 #topnav{
    background: var(--light-gray-color);
    min-height: 7vh;
@@ -163,3 +164,133 @@ header .container .down ul li a:hover:after{
 
 /* main */
 /* footer */
+
+ /* ===== MEDIA QUERY ===== */
+ /* ===== MEDIA QUERY ===== */
+ /* ===== MEDIA QUERY ===== */
+ @media only screen and (max-width: 600px){
+    /*-====top nav ===== */
+#topnav{
+   min-height: 10vh;
+   width: 100%;
+}
+#topnav .container{
+   height: 10vh;
+   flex-direction: column;
+}
+
+#topnav .container .social{
+    height: 5vh;
+
+
+}
+#topnav .container .links ul{
+    display: flex;
+}
+#topnav .container .links ul li{
+    font-size: .65rem;
+    position: relative;
+}
+
+}
+#topnav .container .links ul li a{
+    color: var(--text-color);
+    padding: 0.1rem .5rem;
+}
+#topnav .container .links ul li a.active{
+    color: var(--black-color);
+    background: var(--white-color);
+}
+#topnav .container .links ul li a:hover{
+    color: var(--black-color);
+    transition: all o.3s ease-in-out;
+}
+
+#topnav .container .social span{
+    background: var(--gary-color);
+    padding: .11rem;
+    border-radius: 50%;
+    font-size: .8rem;
+    color: var(--white-color);
+    
+}
+
+    /*-====header nav ===== */
+ header{
+    background-color: var(--white-color);
+    height: 20vh;
+}
+header .container{
+    height: 20vh;
+    flex-direction: column;
+}
+header .container .top{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+}
+header .container .top .top-left{
+    width: 40vw;
+}
+
+header .container .top .top-left img{
+    width: 100%;
+}
+
+
+header .container .top .top-right{
+    display: flex;
+    gap: .51rem;
+}
+
+header .container .top .top-right span a{
+    color: var(--black-color);
+    font-size: .7rem;
+}
+header .container .top .top-right span :hover{
+    color: var(--primary-color);
+}
+header .container .down{
+    width: 100%;
+    height: 10vh;
+
+}
+header .container .down ul{
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    gap: 2.5rem;
+}
+header .container .down ul li a{
+    font-size: .4rem;
+}
+header .container .down ul li a{
+    color: var(--black-color);
+    /* code pen  */
+    position: relative;
+    transition: transform 0.1s ease-in-out;
+}
+header .container .down ul li a::before,
+header .container .down ul li a::after{
+    content: "";
+    position: absolute;
+    background-color: var(--primary-color);
+    transition: transform 0.5s;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    bottom: -10px;
+    transform: scale(0);
+    transform-origin: left;
+}
+header .container .down ul li a:hover:after{
+    transform: scale(1);
+}
+
+    /*-====main nav ===== */
+    /*-====footer nav ===== */
+   
+ 
